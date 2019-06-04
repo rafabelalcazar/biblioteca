@@ -34,27 +34,6 @@ h2, h3, h4, h5, h6{
 
 }
 
-nav{
-    
-    background-color: #0b2369;
-    color:white;
-    border:1px solid #626262;
-     display: flex; 
- direction: column; 
- flex-direction: row; 
-justify-content: space-between !important; 
-font-family: 'Fjalla One', sans-serif;
-
-}
-
-nav a:hover {
-
-    color: #cc0000;
-    text-decoration: underline;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 30px;
-
-}
 section{
     display: flex;
     flex-direction: column;
@@ -89,6 +68,28 @@ main{
 }  */
 
 /* Clase */
+
+.my-nav{
+
+    background-color: #0b2369;
+    color:white;
+    border:1px solid #626262;
+     display: flex; 
+ direction: column; 
+ flex-direction: row; 
+justify-content: space-between !important; 
+font-family: 'Fjalla One', sans-serif;
+
+}
+
+.my-nav a:hover {
+
+    color: #cc0000;
+    text-decoration: underline;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+
+}
 
 
 .navbar-brand{
@@ -249,6 +250,19 @@ main{
 
 
 
+.fix-height{
+    height: 16rem;
+}
+
+.bg-secondary{
+    background: #f5f5f5 !important;
+}
+
+.shadow{
+    -webkit-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.43);
+-moz-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.43);
+box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.43);
+}
 /* .elemento{
     width: 25%; // cuando necesito que cambien de tamaño y se adapten los cuadros se vuelven mas chititos pero alcanzan todos en el horizontal
 } */

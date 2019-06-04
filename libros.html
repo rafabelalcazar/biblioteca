@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Unilibro</title>
+
+    <!-- Import bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="fixed-top bg-secondary shadow">
+        <header>
+            <nav class="navbar my-nav navbar-expand-lg ">
+                <a class="navbar-brand" href="/">Universidad del Cauca</a>
+
+                <button class="btn btn-user btn-outline-danger my-2 my-sm-0" type="submit">
+                    IniciarSesion <i class="fas fa-user-circle"></i>
+                </button>
+            </nav>
+        </header>
+        <section class="container m-3 text-center mx-auto d-flex justify-content-center ">
+            <form action="">
+                <div class="form-row align-items-center ">
+                    <div class="col-sm-6 my-1">
+                        <label class="mr-sm-2 sr-only" for="categoria">Categoria</label>
+                        <select class="custom-select mr-sm-2" id="categoria" placeholder="Categoria">
+                            <option selected value="ingenieria">Ingeniería</option>
+                            <option value="quimica">Química</option>
+                            <option value="fisica">Física</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6 my-1">
+                        <label class="sr-only" for="inlineFormInputGroupUsername">Buscar...</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Buscar...">
+                            <div class="input-group-prepend">
+                                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <div class="row">
+                <div class="col-12 justify-content-center d-flex">
+                    <nav aria-label="page-nav">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Titulo</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Autor</a></li>
+                            <li class="page-item"><a class="page-link" href="#">ISBN</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Contenido principal libros -->
+    <div class="fix-height"> 
+
+    </div>
+    <main class="books-container container ">
+        <div class="row">
+            <div class="col-12">
+                <div class="card mb-3 w-100">
+                    <div class="row no-gutters">
+                        <div class="col-md-2 my-auto mx-auto">
+                            <img src="img/ingenieria-de-metodos-9789587713428-ecoe.jpg" class="card-img cove" alt="">
+                        </div>
+                        <div class="col-md-7 my-auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingeniería de métodos movimientos y tiempos</h5>
+                                <p class="card-text">Luis Carlos Palacios</p>
+                                <p>Año: <span>2012</span></p>
+                                <p>ISBN: <span>382736</span></p>
+                            </div>
+                        </div>
+                        <div class="col-2 my-auto mx-auto w-100 text-center">
+                            <button type="button" class="btn btn-warning">
+                                Disponibles <span class="badge badge-light">4</span>
+                            </button>
+                            <button class="btn btn-primary my-4">Reservar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 w-100">
+                        <div class="row no-gutters">
+                            <div class="col-md-2 my-auto mx-auto">
+                                <img src="img/ingenieria-de-metodos-9789587713428-ecoe.jpg" class="card-img cove" alt="">
+                            </div>
+                            <div class="col-md-7 my-auto">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ingeniería de métodos movimientos y tiempos</h5>
+                                    <p class="card-text">Luis Carlos Palacios</p>
+                                    <p>Año: <span>2012</span></p>
+                                    <p>ISBN: <span>382736</span></p>
+                                </div>
+                            </div>
+                            <div class="col-2 my-auto mx-auto w-100 text-center">
+                                <button type="button" class="btn btn-warning disabled">
+                                    Disponibles <span class="badge badge-light">4</span>
+                                </button>
+                                <button class="btn btn-primary my-4">Reservar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3 w-100">
+                            <div class="row no-gutters">
+                                <div class="col-md-2 my-auto mx-auto">
+                                    <img src="img/ingenieria-de-metodos-9789587713428-ecoe.jpg" class="card-img cove" alt="">
+                                </div>
+                                <div class="col-md-7 my-auto">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ingeniería de métodos movimientos y tiempos</h5>
+                                        <p class="card-text">Luis Carlos Palacios</p>
+                                        <p>Año: <span>2012</span></p>
+                                        <p>ISBN: <span>382736</span></p>
+                                    </div>
+                                </div>
+                                <div class="col-2 my-auto mx-auto w-100 text-center">
+                                    <button type="button" class="btn btn-warning disabled">
+                                        Disponibles <span class="badge badge-light">4</span>
+                                    </button>
+                                    <button class="btn btn-primary my-4">Reservar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 w-100">
+                                <div class="row no-gutters">
+                                    <div class="col-md-2 my-auto mx-auto">
+                                        <img src="img/ingenieria-de-metodos-9789587713428-ecoe.jpg" class="card-img cove" alt="">
+                                    </div>
+                                    <div class="col-md-7 my-auto">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Ingeniería de métodos movimientos y tiempos</h5>
+                                            <p class="card-text">Luis Carlos Palacios</p>
+                                            <p>Año: <span>2012</span></p>
+                                            <p>ISBN: <span>382736</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-2 my-auto mx-auto w-100 text-center">
+                                        <button type="button" class="btn btn-warning disabled">
+                                            Disponibles <span class="badge badge-light">4</span>
+                                        </button>
+                                        <button class="btn btn-primary my-4">Reservar</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                
+
+
+
+
+
+            </div>
+        </div>
+
+    </main>
+
+
+
+</body>
+
+</html>
