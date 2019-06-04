@@ -18,6 +18,9 @@ body{
     font-family:  'Source Sans Pro', sans-serif;
     margin: 0px; 
     background-color: #f3f3f3; 
+    display: flex;
+    flex-direction: column;
+    
 }
 
 h1 {
@@ -81,7 +84,7 @@ footer{
     /* position: absolute;  */
     bottom: 0;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
  
 } 
 
@@ -112,7 +115,8 @@ footer{
      justify-content: center;  
      flex-wrap: wrap;
      height: 100%;
-     border: 1px solid black;
+     margin: 10px;
+     /* border: 1px solid black; */
      
     
      /* margin: 10% 0% 10% 0%; */
@@ -120,11 +124,13 @@ footer{
 .select{
     /* width: 30%; */
    
-    margin: 0 10px 0px 10px;
+    margin: 40px 10px 0px 10px;
     background-color: #eaeae6;
     border-radius: 10px;
     width: 200px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
  
     
 
@@ -141,6 +147,7 @@ footer{
     font-size: 1.3em;
     text-align: center;
     color: #cc0000;
+
     margin: 10px 0px 10px 0px;
 }
 .btn-group-vertical{
@@ -176,6 +183,9 @@ footer{
     flex-wrap: wrap;
     background: white;
     border-radius: 20px;
+    flex-direction: row;
+    justify-content: center;
+    
    
 }
 .info-prinicpal{
@@ -186,19 +196,36 @@ footer{
 }
  .info-biblio{
    
-    width: 55%;
+    width: 60%;
     border: rgb(165, 23, 23);
     background: rgb(165, 23, 23);
+    margin: 0px 20px 0px 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
+}
+.info-btn-prin{
+    width: 60%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
 
 }
 .info-bibl-cont{
-    font-size: 10px;
+    font-size: 80%;
+    text-align: justify;
+    margin: 20px;
 
 }
 .info-img{
    
     width: 40%;
     border: rgb(165, 23, 23);
+
 
 }
 
