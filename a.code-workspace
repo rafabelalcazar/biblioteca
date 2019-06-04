@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "E:\\platzi\\desarrolloWeb"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "biblioteca"
+	}
+}
