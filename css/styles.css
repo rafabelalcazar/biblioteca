@@ -203,6 +203,19 @@ font-family: 'Fjalla One', sans-serif;
 
 }
 
+.fix-height{
+    height: 16rem;
+}
+
+.bg-secondary{
+    background: #f5f5f5 !important;
+}
+
+.shadow{
+    -webkit-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.43);
+-moz-box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.43);
+box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.43);
+}
 /* .elemento{
     width: 25%; // cuando necesito que cambien de tamaño y se adapten los cuadros se vuelven mas chititos pero alcanzan todos en el horizontal
 } */
