@@ -31,27 +31,6 @@ h2, h3, h4, h5, h6{
 
 }
 
-nav{
-    
-    background-color: #0b2369;
-    color:white;
-    border:1px solid #626262;
-     display: flex; 
- direction: column; 
- flex-direction: row; 
-justify-content: space-between !important; 
-font-family: 'Fjalla One', sans-serif;
-
-}
-
-nav a:hover {
-
-    color: #cc0000;
-    text-decoration: underline;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 30px;
-
-}
 section{
     display: flex;
     flex-direction: column;
@@ -86,6 +65,28 @@ footer{
 } 
 
 /* Clase */
+
+.my-nav{
+
+    background-color: #0b2369;
+    color:white;
+    border:1px solid #626262;
+     display: flex; 
+ direction: column; 
+ flex-direction: row; 
+justify-content: space-between !important; 
+font-family: 'Fjalla One', sans-serif;
+
+}
+
+.my-nav a:hover {
+
+    color: #cc0000;
+    text-decoration: underline;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+
+}
 
 
 .navbar-brand{
