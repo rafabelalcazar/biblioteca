@@ -8,11 +8,11 @@
     <title>Unilibro</title>
 
     <!-- Import bootstrap 4 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans" rel="stylesheet">
 
 </head>
@@ -40,11 +40,12 @@
                         </select>
                     </div>
                     <div class="col-sm-6 my-1">
-                        <label class="sr-only" for="inlineFormInputGroupUsername">Buscar...</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Buscar...">
+                            <label class="sr-only" for="search-book" required>Buscar...</label>
+                            <input type="text" class="form-control" id="search-book" placeholder="Buscar...">
                             <div class="input-group-prepend">
-                                <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                                <button type="submit" class="btn btn-primary" onclick="searchBooks()"><i
+                                        class="fas fa-search"></i></button>
                             </div>
                         </div>
                     </div>
@@ -66,7 +67,7 @@
         </section>
     </div>
     <!-- Contenido principal libros -->
-    <div class="fix-height"> 
+    <div class="fix-height">
 
     </div>
     <main class="books-container container ">
@@ -95,83 +96,74 @@
                 </div>
 
                 <div class="card mb-3 w-100">
-                        <div class="row no-gutters">
-                            <div class="col-md-2 my-auto mx-auto">
-                                <img src="img/ingenieria-de-metodos-9789587713428-ecoe.jpg" class="card-img cove" alt="">
+                    <div class="row no-gutters">
+                        <div class="col-md-2 my-auto mx-auto">
+                            <img src="img/ingenieria-de-metodos-9789587713428-ecoe.jpg" class="card-img cove" alt="">
+                        </div>
+                        <div class="col-md-7 my-auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingeniería de movimientos y tiempos</h5>
+                                <p class="card-text">Luis Carlos Palacios</p>
+                                <p>Año: <span>2012</span></p>
+                                <p>ISBN: <span>382736</span></p>
                             </div>
-                            <div class="col-md-7 my-auto">
-                                <div class="card-body">
-                                    <h5 class="card-title">Ingeniería de métodos movimientos y tiempos</h5>
-                                    <p class="card-text">Luis Carlos Palacios</p>
-                                    <p>Año: <span>2012</span></p>
-                                    <p>ISBN: <span>382736</span></p>
-                                </div>
-                            </div>
-                            <div class="col-2 my-auto mx-auto w-100 text-center">
-                                <button type="button" class="btn btn-warning disabled">
-                                    Disponibles <span class="badge badge-light">4</span>
-                                </button>
-                                <button class="btn btn-primary my-4">Reservar</button>
-                            </div>
+                        </div>
+                        <div class="col-2 my-auto mx-auto w-100 text-center">
+                            <button type="button" class="btn btn-warning disabled">
+                                Disponibles <span class="badge badge-light">4</span>
+                            </button>
+                            <button class="btn btn-primary my-4">Reservar</button>
                         </div>
                     </div>
+                </div>
 
-                    <div class="card mb-3 w-100">
-                            <div class="row no-gutters">
-                                <div class="col-md-2 my-auto mx-auto">
-                                    <img src="img/ingenieria-de-metodos-9789587713428-ecoe.jpg" class="card-img cove" alt="">
-                                </div>
-                                <div class="col-md-7 my-auto">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Ingeniería de métodos movimientos y tiempos</h5>
-                                        <p class="card-text">Luis Carlos Palacios</p>
-                                        <p>Año: <span>2012</span></p>
-                                        <p>ISBN: <span>382736</span></p>
-                                    </div>
-                                </div>
-                                <div class="col-2 my-auto mx-auto w-100 text-center">
-                                    <button type="button" class="btn btn-warning disabled">
-                                        Disponibles <span class="badge badge-light">4</span>
-                                    </button>
-                                    <button class="btn btn-primary my-4">Reservar</button>
-                                </div>
+                <div class="card mb-3 w-100">
+                    <div class="row no-gutters">
+                        <div class="col-md-2 my-auto mx-auto">
+                            <img src="img/ingenieria-de-metodos-9789587713428-ecoe.jpg" class="card-img cove" alt="">
+                        </div>
+                        <div class="col-md-7 my-auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingeniería de métodos movimientos y tiempos</h5>
+                                <p class="card-text">Luis Carlos Palacios</p>
+                                <p>Año: <span>2012</span></p>
+                                <p>ISBN: <span>382736</span></p>
                             </div>
                         </div>
+                        <div class="col-2 my-auto mx-auto w-100 text-center">
+                            <button type="button" class="btn btn-warning disabled">
+                                Disponibles <span class="badge badge-light">4</span>
+                            </button>
+                            <button class="btn btn-primary my-4">Reservar</button>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="card mb-3 w-100">
-                                <div class="row no-gutters">
-                                    <div class="col-md-2 my-auto mx-auto">
-                                        <img src="img/ingenieria-de-metodos-9789587713428-ecoe.jpg" class="card-img cove" alt="">
-                                    </div>
-                                    <div class="col-md-7 my-auto">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Ingeniería de métodos movimientos y tiempos</h5>
-                                            <p class="card-text">Luis Carlos Palacios</p>
-                                            <p>Año: <span>2012</span></p>
-                                            <p>ISBN: <span>382736</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="col-2 my-auto mx-auto w-100 text-center">
-                                        <button type="button" class="btn btn-warning disabled">
-                                            Disponibles <span class="badge badge-light">4</span>
-                                        </button>
-                                        <button class="btn btn-primary my-4">Reservar</button>
-                                    </div>
-                                </div>
+                <div class="card mb-3 w-100">
+                    <div class="row no-gutters">
+                        <div class="col-md-2 my-auto mx-auto">
+                            <img src="img/ingenieria-de-metodos-9789587713428-ecoe.jpg" class="card-img cove" alt="">
+                        </div>
+                        <div class="col-md-7 my-auto">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingeniería de métodos movimientos y tiempos</h5>
+                                <p class="card-text">Luis Carlos Palacios</p>
+                                <p>Año: <span>2012</span></p>
+                                <p>ISBN: <span>382736</span></p>
                             </div>
-
-                
-
-
-
-
-
+                        </div>
+                        <div class="col-2 my-auto mx-auto w-100 text-center">
+                            <button type="button" class="btn btn-warning disabled">
+                                Disponibles <span class="badge badge-light">4</span>
+                            </button>
+                            <button class="btn btn-primary my-4">Reservar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </main>
-
-
+    <script src="/js/libros.js"></script>
 
 </body>
 
