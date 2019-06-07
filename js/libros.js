@@ -1,32 +1,7 @@
-// alert('hola')
 search = document.getElementById('search-book')
 books = document.getElementsByClassName('card-title')
 categorySelected = document.getElementById('categoria')
-
-
-// Recibe lo que se escriba en searchbar y el objeto de libros
-function compararTitulo(search, books) {
-    for (let i = 0; i < books.length; i++) {
-        console.log(books[i].innerText.includes(search.value))
-        if (books[i].innerText.includes(search.value)) {
-            // Va hasta el card del libro y le quita la clase display none d-none
-            books[i].parentNode.parentNode.parentNode.parentNode.classList.remove('d-none')
-            // return books[i].parentNode.parentNode.parentNode.parentNode.classList.remove('d-none')
-        }
-        else {
-            books[i].parentNode.parentNode.parentNode.parentNode.classList.add('d-none')
-        }
-
-        // console.log(books[i].innerText)
-    }
-}
-
-
-
-
-function comparar() {
-    compararTitulo(search, books)
-}
+console.log(categorySelected.value)
 
 const deployByTitle = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -38,8 +13,8 @@ const deployByTitle = function () {
         for (let item of books) {
             // console.log(item.titulo.toLowerCase())
 
-            if (item.titulo.toLowerCase().includes(search.value.toLowerCase())) {
-                // console.log(containerCards)
+            console.log(item.categoria.includes(categorySelected.value))
+            if (item.titulo.toLowerCase().includes(search.value.toLowerCase()) && (item.categoria.includes(categorySelected.value) || categorySelected.value == 'todos')) {
                 containerCards.innerHTML += `
             <div class="card mb-3 w-100">
                 <div class="row no-gutters">
@@ -148,10 +123,7 @@ const deployISBN = function () {
     }
 }
 
-
-
 function searchTitle() {
-    console.log('estoy dentro de la funcion')
     const xhttp = new XMLHttpRequest()
     xhttp.open('GET', 'db.json', true)
     xhttp.send()
@@ -159,7 +131,6 @@ function searchTitle() {
 }
 
 function searchAutor() {
-    console.log('estoy dentro de la funcion')
     const xhttp = new XMLHttpRequest()
     xhttp.open('GET', 'db.json', true)
     xhttp.send()
@@ -167,18 +138,8 @@ function searchAutor() {
 }
 
 function searchISBN() {
-    console.log('estoy dentro de la funcion')
     const xhttp = new XMLHttpRequest()
     xhttp.open('GET', 'db.json', true)
     xhttp.send()
     xhttp.onreadystatechange = deployISBN
 }
-
-
-
-
-// console.log(libros(1))
-
-// console.log(books.map(function (book) {
-//     return book.innerText
-// }))
