@@ -1,4 +1,4 @@
-alert('hola')
+// alert('hola')
 search = document.getElementById('search-book')
 books = document.getElementsByClassName('card-title')
 
