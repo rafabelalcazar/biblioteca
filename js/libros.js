@@ -35,11 +35,15 @@ function searchTitle() {
         if (this.readyState == 4 && this.status == 200) {
             let books = JSON.parse(this.responseText)
             let containerCards = document.getElementById('card-container')
+            containerCards.innerHTML = ''
             // console.log(containerCards)
 
             for (let item of books) {
-                console.log(containerCards)
-                containerCards.innerHTML += `
+                console.log(item.titulo.toLowerCase())
+
+                if (item.titulo.toLowerCase().includes(search.value.toLowerCase())) {
+                    console.log(containerCards)
+                    containerCards.innerHTML += `
                 <div class="card mb-3 w-100">
                     <div class="row no-gutters">
                         <div class="col-md-2 my-auto mx-auto">
@@ -62,6 +66,9 @@ function searchTitle() {
                     </div>
                 </div>                
                 `
+
+                }
+
             }
         }
     }
