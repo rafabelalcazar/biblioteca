@@ -8,7 +8,8 @@ morado 9E0C39
 333333
 gris claro fafafa
 
-
+contraseña de startci
+cer.Lia19
 /*-----------General-----------*/
 html{
     height: 100%;
@@ -35,13 +36,13 @@ h2, h3, h4, h5, h6{
 
 
 
-
+/* 
 footer{
     background-color: #1d252c;
-    /* background-color: #173486; */
+    /* background-color: #173486; 
     font-size: 0.5em;; 
     color: white;   
-     /* display: flex;*/
+     /* display: flex;
    flex-direction: column;   
     align-items: flex-end !important;     
     bottom: 0;
@@ -51,7 +52,7 @@ footer{
 } 
 footer h6{
     text-align: center;
-}
+} */
 
 /* Clase */
 
@@ -98,7 +99,7 @@ font-family: 'Fjalla One', sans-serif;
     /* height: 10px; */
     font-size: 15px;
 }
-.princ-menu{
+.princ{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -129,15 +130,18 @@ font-family: 'Fjalla One', sans-serif;
 .select{
     /* width: 30%; */
    
-    margin: 0px 10px 0px 10px;
+    margin: 0px 50px 20px 50px;
     /* background-color: #eaeae6; */
     background-color: white;
     /* border: 2px solid #f2f2ef; */
     /* border-radius: 10px; */
-    width: 200px;
+    /* width: 100%; */
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    
  
     
 
@@ -180,8 +184,7 @@ font-family: 'Fjalla One', sans-serif;
     color: white !important;
     font-family: 'Fjalla One', sans-serif;
     font-size: 1.1em;
-    width: 100%;
-     height: 100%;
+   
 
 }
 .info{
@@ -238,8 +241,8 @@ font-family: 'Fjalla One', sans-serif;
 .info-img figure img{
    
     /* kwidth: 300px; */
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     border: rgb(165, 23, 23);
 
 
@@ -320,8 +323,8 @@ box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.43);
 .login-container{
     position: relative;
     width: 300px;
-    margin: 80px auto;
-    padding: 20px 40px 40px;
+    margin: 50px;
+    padding: 10px 40px 40px;
     text-align: center;
     background: #fff;
     border: 1px solid #ccc;
@@ -455,8 +458,19 @@ box-shadow: 0px 1px 16px 1px rgba(0,0,0,0.43);
 .menu-login{
     display: flex;
     flex-direction: column;
-    
+    height: 100%;     
+    /* position: absolute; */
 
+
+}
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
 }
 
 
